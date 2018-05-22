@@ -26,7 +26,7 @@ class ExampleAdapter(context: Context, val items: List<ExampleData>) : RecyclerV
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        //holder.imgFlag.setImageResource(items[position].resId)
+
         holder.iconPrefix.setImageResource(items[position].iconPrefix)
         holder.iconSuffix.setImageResource(items[position].iconSuffix)
         holder.desc.text = items[position].desc
