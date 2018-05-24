@@ -7,10 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import io.dandi.android.ch02.LayoutCodeActivity
-import io.dandi.android.ch02.SampleLinearLayoutActivity
-import io.dandi.android.ch02.SampleRelativeLayoutActivity
-import io.dandi.android.ch02.SampleScrollLayoutActivity
+import io.dandi.android.ch02.*
 import io.dandi.doitandroid.R
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -25,7 +22,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 ExampleData(R.drawable.number_0, R.drawable.number_1, "리니어 레이아웃 사용", "Chapter 02-2"),
                 ExampleData(R.drawable.number_0, R.drawable.number_2, "자바코드에서 화면 구성", "Chapter 02-2"),
                 ExampleData(R.drawable.number_0, R.drawable.number_3, "상대 레이아웃 사용", "Chapter 02-3"),
-                ExampleData(R.drawable.number_0, R.drawable.number_4, "스크롤 뷰 사용", "Chapter 02-5")
+                ExampleData(R.drawable.number_0, R.drawable.number_4, "스크롤 뷰 사용", "Chapter 02-5"),
+                ExampleData(R.drawable.number_0, R.drawable.number_5, "프레임 레이아웃과 뷰의 전환", "Chapter 02-6")
             )
         )
 
@@ -47,6 +45,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             "자바코드에서 화면 구성" -> startActivity(Intent(this, LayoutCodeActivity::class.java))
             "상대 레이아웃 사용" -> startActivity(Intent(this, SampleRelativeLayoutActivity::class.java))
             "스크롤 뷰 사용" -> startActivity(Intent(this, SampleScrollLayoutActivity::class.java))
+            "프레임 레이아웃과 뷰의 전환" -> startActivity(Intent(this, SampleFrameLayoutActivity::class.java))
             else -> Toast.makeText(this, "선택 :: 뿅", Toast.LENGTH_SHORT).show()
         }
 
