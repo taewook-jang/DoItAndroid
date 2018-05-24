@@ -19,6 +19,7 @@
         <activity android:name="io.dandi.android.ch02.SampleLinearLayoutActivity"/>
         <activity android:name="io.dandi.android.ch02.LayoutCodeActivity"/>
         <activity android:name="io.dandi.android.ch02.SampleRelativeLayoutActivity"/>
+        <activity android:name="io.dandi.android.ch02.SampleScrollLayoutActivity"/>
     </application>
 
 </manifest>

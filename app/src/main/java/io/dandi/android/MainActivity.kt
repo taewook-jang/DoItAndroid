@@ -10,6 +10,7 @@ import android.widget.Toast
 import io.dandi.android.ch02.LayoutCodeActivity
 import io.dandi.android.ch02.SampleLinearLayoutActivity
 import io.dandi.android.ch02.SampleRelativeLayoutActivity
+import io.dandi.android.ch02.SampleScrollLayoutActivity
 import io.dandi.doitandroid.R
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -23,7 +24,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var adapter = ExampleAdapter(this, listOf (
                 ExampleData(R.drawable.number_0, R.drawable.number_1, "리니어 레이아웃 사용", "Chapter 02-2"),
                 ExampleData(R.drawable.number_0, R.drawable.number_2, "자바코드에서 화면 구성", "Chapter 02-2"),
-                ExampleData(R.drawable.number_0, R.drawable.number_3, "상대 레이아웃 사용", "Chapter 02-3")
+                ExampleData(R.drawable.number_0, R.drawable.number_3, "상대 레이아웃 사용", "Chapter 02-3"),
+                ExampleData(R.drawable.number_0, R.drawable.number_4, "스크롤 뷰 사용", "Chapter 02-5")
             )
         )
 
@@ -44,6 +46,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             "리니어 레이아웃 사용" -> startActivity(Intent(this, SampleLinearLayoutActivity::class.java))
             "자바코드에서 화면 구성" -> startActivity(Intent(this, LayoutCodeActivity::class.java))
             "상대 레이아웃 사용" -> startActivity(Intent(this, SampleRelativeLayoutActivity::class.java))
+            "스크롤 뷰 사용" -> startActivity(Intent(this, SampleScrollLayoutActivity::class.java))
             else -> Toast.makeText(this, "선택 :: 뿅", Toast.LENGTH_SHORT).show()
         }
 
