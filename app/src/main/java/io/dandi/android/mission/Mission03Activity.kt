@@ -3,14 +3,14 @@ package io.dandi.android.mission
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import io.dandi.doitandroid.R
-import kotlinx.android.synthetic.main.mission02_activity_main.*
+import kotlinx.android.synthetic.main.mission03_activity_main.*
 
-class Mission02Activity : AppCompatActivity() {
+class Mission03Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.mission02_activity_main)
+        setContentView(R.layout.mission03_activity_main)
 
         __mission02_btn_01__.setOnClickListener {
             moveImageUp()
