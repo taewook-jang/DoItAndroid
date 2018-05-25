@@ -16,11 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name="io.dandi.android.ch02.SampleLinearLayoutActivity"/>
         <activity android:name="io.dandi.android.ch02.LayoutCodeActivity"/>
         <activity android:name="io.dandi.android.ch02.SampleRelativeLayoutActivity"/>
         <activity android:name="io.dandi.android.ch02.SampleScrollLayoutActivity"/>
         <activity android:name="io.dandi.android.ch02.SampleFrameLayoutActivity"/>
+
+        <activity android:name="io.dandi.android.mission.Mission02Activity"/>
+
+
+
     </application>
 
 </manifest>
