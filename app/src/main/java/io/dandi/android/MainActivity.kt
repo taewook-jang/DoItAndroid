@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import io.dandi.android.ch02.*
+import io.dandi.android.ch03.SampleLayoutInflaterActivity
 import io.dandi.android.mission.Mission03Activity
 import io.dandi.android.mission.Mission04Activity
 import io.dandi.doitandroid.R
@@ -27,7 +28,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 ExampleData(R.drawable.number_0, R.drawable.number_4, "스크롤 뷰 사용", "Chapter 02-5"),
                 ExampleData(R.drawable.number_0, R.drawable.number_5, "프레임 레이아웃과 뷰의 전환", "Chapter 02-6"),
                 ExampleData(R.drawable.number_0, R.drawable.number_6, "도전 안드로이드 미션 03", "두 개의 이미지 뷰에 이미지 번갈아 보여주기"),
-                ExampleData(R.drawable.number_0, R.drawable.number_7, "도전 안드로이드 미션 04", "SMS 입력화면 만들고 글자수 표시하기")
+                ExampleData(R.drawable.number_0, R.drawable.number_7, "도전 안드로이드 미션 04", "SMS 입력화면 만들고 글자수 표시하기"),
+                ExampleData(R.drawable.number_0, R.drawable.number_8, "레이아웃 인플레이션 이해하기", "Chapter 03-1")
             )
         )
 
@@ -52,6 +54,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             "프레임 레이아웃과 뷰의 전환" -> startActivity(Intent(this, SampleFrameLayoutActivity::class.java))
             "도전 안드로이드 미션 03" -> startActivity(Intent(this, Mission03Activity::class.java))
             "도전 안드로이드 미션 04" -> startActivity(Intent(this, Mission04Activity::class.java))
+            "레이아웃 인플레이션 이해하기" -> startActivity(Intent(this, SampleLayoutInflaterActivity::class.java))
             else -> Toast.makeText(this, "선택 :: 뿅", Toast.LENGTH_SHORT).show()
         }
 

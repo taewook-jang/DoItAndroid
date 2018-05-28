@@ -26,6 +26,8 @@
         <activity android:name="io.dandi.android.mission.Mission03Activity"/>
         <activity android:name="io.dandi.android.mission.Mission04Activity"/>
 
+        <activity android:name="io.dandi.android.ch03.SampleLayoutInflaterActivity"/>
+
     </application>
 
 </manifest>
