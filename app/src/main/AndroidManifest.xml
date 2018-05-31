@@ -32,6 +32,7 @@
         <activity android:name="io.dandi.android.ch03.SampleIntentActivity"/>
         <activity android:name="io.dandi.android.ch03.SampleCallIntentActivity"/>
         <activity android:name="io.dandi.android.ch03.SamplePDFViewActivity"/>
+        <activity android:name="io.dandi.android.ch03.SampleParcelableActivity"/>
 
     </application>
 
