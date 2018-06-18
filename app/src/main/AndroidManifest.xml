@@ -34,6 +34,12 @@
         <activity android:name="io.dandi.android.ch03.SamplePDFViewActivity"/>
         <activity android:name="io.dandi.android.ch03.SampleParcelableActivity"/>
         <activity android:name="io.dandi.android.ch03.SampleLifecycleActivity"/>
+        <activity android:name="io.dandi.android.ch03.SampleServiceActivity"/>
+
+        <service
+            android:name="io.dandi.android.ch03.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
 
     </application>
 

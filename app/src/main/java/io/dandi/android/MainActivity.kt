@@ -42,7 +42,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 ExampleData(R.drawable.number_1, R.drawable.number_0, "인텐트 살펴보기", "Chapter 03-3"),
                 ExampleData(R.drawable.number_1, R.drawable.number_1, "PDF 파일 보여주기", "Chapter 03-3"),
                 ExampleData(R.drawable.number_1, R.drawable.number_2, "액티비티를 위한 플래그와 부가 데이터", "Chapter 03-4"),
-                ExampleData(R.drawable.number_1, R.drawable.number_3, "액티비티의 수명주기", "Chapter 03-5")
+                ExampleData(R.drawable.number_1, R.drawable.number_3, "액티비티의 수명주기", "Chapter 03-5"),
+                ExampleData(R.drawable.number_1, R.drawable.number_4, "서비스", "Chapter 03-6")
             )
         )
 
@@ -78,6 +79,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivityForResult(intent, REQUEST_CODE_MENU)
             }
             "액티비티의 수명주기" -> startActivity(Intent(this, SampleLifecycleActivity::class.java))
+            "서비스" -> startActivity(Intent(this, SampleServiceActivity::class.java))
             else -> Toast.makeText(this, "선택 :: 뿅", Toast.LENGTH_SHORT).show()
         }
 
